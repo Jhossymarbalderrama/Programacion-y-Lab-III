@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 - Formulario Alta Empleados</title>
+
+    <!--<script src="./javascript/validaciones.js" ></script>-->
+    <script src="./javascript/funciones.js" ></script>
+</head>
+<body>    
+
+    <!--
+        16- Confeccionar un formulario que permita ingresar el nombre de una persona, su mail, su
+            DNI (documento nacional de identidad) y finalmente su currículum vitae (este último dato
+            hacerlo utilizando un <TEXTAREA>). Al pulsar el botón btnAceptar, por medio de una
+            función en TypeScript, mostrar todos sus datos por consola.
+
+            Datos personales:
+            -nombre
+            -mail
+            -DNI
+            -Curriculum vitae (Utilizar <TEXAREA>)
+                
+            -Boton Aceptar
+    -->
+    <form > 
+        <h2 align="center" style="padding-right: 90px;">Alta de Empleados</h2>
+
+        <table align="center">            
+            <tr>
+                <td colspan="2" align="center" style="padding-right: 180px;"><h4>Datos Personales</h4></td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td>DNI:</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="number" id="textDNI" placeholder="Ingrese DNI" min="1000000" max="55000000"/> 
+                    <br>				
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Apellido:</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="text" id="textApellido" placeholder="Ingrese su Apellido..." /> 
+                    <br>				
+                </td>
+            </tr>
+
+            <tr>
+                <td>Nombre:</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="text" id="textNombre" placeholder="Ingrese su Nombre..." /> 
+                    <br>				
+                </td>
+            </tr>
+
+            <tr>
+                <td>Sexo:</td>
+                <td align="left" style="padding-left: 15px;">
+                    <select id="cboSexo" required >
+                        <option value="" default selected>Seleccione</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center" style="padding-right: 180px;"><h4>Datos Laborales</h4></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Legajo:</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="number" id="textLegajo" placeholder="Ingrese su Legajo..." min="100" max="550" /> 
+                    <br>				
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Sueldo:</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="number" id="textSueldo" placeholder="Ingrese su Sueldo..." min="8000" max="25000" step="500"/> 
+                    <br>				
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="padding-top:10px;">Turno:</td>
+            </tr>
+            <tr>
+                			
+                <td style="padding-left:30px;">
+                    <input type="radio" name="rdoTurno" value="Mañana" checked="checked"/>Mañana				
+                </td>                
+                	
+            </tr>
+            <tr>			
+                <td style="padding-left:30px;">
+                    <input type="radio" name="rdoTurno" value="Tarde" />Tarde						
+                </td>
+            </tr>
+            <tr>			
+                <td style="padding-left:30px;">
+                    <input type="radio"  name="rdoTurno" value="Noche" />Noche					
+                </td>
+            </tr>				
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+
+            <tr>
+                <td align="right" style="padding-left: 80%">
+                    <input type="reset" value="Limpiar" name="reset" />
+                </td>
+
+            </tr>
+            <tr>
+                <td align="right" style="padding-left: 82%">
+                    <input type="button" onclick="AdministrarValidaciones()" value="Enviar" /> 
+                </td>
+            </tr>
+            
+        </table>
+
+    </form>
+</body>
+</html>

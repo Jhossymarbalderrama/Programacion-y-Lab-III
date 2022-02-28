@@ -1,0 +1,1 @@
+Escritura dentro del texto4  <br>Hola escribo desde PHP

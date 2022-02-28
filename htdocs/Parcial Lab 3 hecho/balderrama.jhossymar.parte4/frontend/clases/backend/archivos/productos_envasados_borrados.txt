@@ -1,0 +1,10 @@
+20 - test - test - 33333333 - 110 - ./productosBorrados/20testborrado145504.jpg
+21 - test - test - 33333333 - 110 - ./productosBorrados/21testborrado145653.jpg
+22 - test - test - 33333333 - 110 - ./productosBorrados/22testborrado145804.jpg
+23 - test - test - 33333333 - 110 - ./productosBorrados/23testborrado145924.jpg
+24 - test2 - test2 - 22222222 - 110 - ./productosBorrados/24test2borrado150211.jpg
+25 - test4 - test4 - 4294967295 - 300 - ./productosBorrados/25test4borrado150258.jpg
+46 - test4 - Brasil - 4321 - 4321 - ./productosBorrados/46test4borrado161056.jpg
+47 - testFotoV1 - Argentina - 1111111 - 1111111 - ./productosBorrados/47testFotoV1borrado172017.p
+48 - testFotoV1 - Brasil - 11111 - 11111 - 
+49 - kaka - Brasil - 2222 - 2222 - ./productosBorrados/49kakaborrado172625.jpg

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./ejercicio_16.js" ></script>
+</head>
+<body>    
+
+    <!--
+        16- Confeccionar un formulario que permita ingresar el nombre de una persona, su mail, su
+            DNI (documento nacional de identidad) y finalmente su currículum vitae (este último dato
+            hacerlo utilizando un <TEXTAREA>). Al pulsar el botón btnAceptar, por medio de una
+            función en TypeScript, mostrar todos sus datos por consola.
+
+            Datos personales:
+            -nombre
+            -mail
+            -DNI
+            -Curriculum vitae (Utilizar <TEXAREA>)
+                
+            -Boton Aceptar
+    -->
+    <form>
+        <table align="center" border="1px"bordercolor="#0000FF" cellspacing="8" cellpadding="10">
+            <tr>
+                <td colspan="2" align="center"><h2>Datos Personales:</h2></td>
+            </tr>
+            
+
+            <tr>
+                <td>Nombre:</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="text" id="Nombre" placeholder="Ingrese su Nombre..." /> 
+                    <br>				
+                </td>
+            </tr>
+
+            <tr>
+                <td>Apellido:</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="text" id="Apellido" placeholder="Ingrese su Apellido..." /> 
+                    <br>				
+                </td>
+            </tr>
+
+            <tr>
+                <td>DNI:</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="text" id="DNI" placeholder="Ingrese su Dni..." /> 
+                    <br>				
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mail:</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="email" id="Mail" placeholder="Ingrese su Mail..." /> 
+                    <br>				
+                </td>
+            </tr>
+
+            <tr> 
+                <td>Curriculum Vitae:</td>
+                <td>
+                    <textarea rows="5" col="20" id="Curriculum" name="Curriculum">
+                    </textarea>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="button" onclick="MostrarDatos()" value="Enviar Datos" /> 
+                </td>
+            </tr>
+            
+        </table>
+
+    </form>
+</body>
+</html>

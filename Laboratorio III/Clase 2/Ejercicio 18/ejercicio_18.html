@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercici 18</title>
+
+    <script src="./ejercicio_18.js" ></script>
+</head>
+<body>
+
+    <form>
+        <table align="center">
+
+            
+            <tr>
+                <td colspan="2"><h3>Peliculas</h3></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+
+            <tr>
+                <td>Nombre:</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="text" id="textNombre" placeholder="Ingrese su Nombre..." /> 
+                    <br>				
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding-top:10px;">Votar Sitio:</td>
+            </tr>
+            <tr>
+                			
+                <td style="padding-left:30px;">
+                    <input type="radio" name="rdoVoto" value="Excelente"/>Excelente				
+                </td>                
+                	
+            </tr>
+            <tr>			
+                <td style="padding-left:30px;">
+                    <input type="radio" name="rdoVoto" value="Muy Bueno" checked="checked"/>Muy Bueno						
+                </td>
+            </tr>
+            <tr>			
+                <td style="padding-left:30px;">
+                    <input type="radio"  name="rdoVoto" value="Regular" />Regular					
+                </td>
+            </tr>		
+            <tr>			
+                <td style="padding-left:30px;">
+                    <input type="radio"  name="rdoVoto" value="Malo" />Malo					
+                </td>
+            </tr>		
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+
+            <tr>
+                <td align="left">
+                    <input type="button" onclick="MostrarVoto()" value="Enviar Voto" /> 
+                </td>
+            </tr>
+        </table>        
+    </form>
+    
+</body>
+</html>

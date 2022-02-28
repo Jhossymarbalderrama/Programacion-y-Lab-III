@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Login</title>
+    <script src="./validaciones.js"></script>
+    <script src="./validacionesLogin.js"></script>
+</head>
+<body>
+    <h2 style="padding-left: 70px; padding-top: 40px;">Login</h2>
+
+    <form name="miForm" action="./BackEnd/verificarUsuario.php" method="POST">
+        <table align="center" >
+            <tr>
+                <td style = "padding: 0px "><h4>Ingreso de credenciales</h4></td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr/></td>
+            </tr>
+            <tr>
+                <td><label for="dni">DNI:</label></td>
+                <td><input id="txtDni" name="txtDni" type="number" min="1000000" max="55000000" placeholder="Ingrese dni...">
+                <span id="spanDni" style="display:none;">*</span>
+                </td>					
+            </tr>
+            <tr>
+                <td><label for="apellido">Apellido:</label></td>
+                <td><input id="txtApellido" name="txtApellido" type="text" placeholder="Ingrese apellido...">
+                    <span id="spanApellido"style="display:none;">*</span>
+                </td>					
+            </tr>
+
+            <tr>
+                <td colspan="2"><hr/></td>
+            </tr>
+            <tr>
+                <td align="right" style="padding-left: 80%">
+                    <input type="reset" value="Limpiar" name="reset" />
+                </td>
+
+            </tr>
+            <tr>
+                <td align="right" style="padding-left: 82%">
+                    <input type="submit" onclick="AdministrarValidacionesLogin()" value="Enviar"  /> 
+                </td>
+            </tr>
+           
+        </table>
+    </form>
+    
+</body>
+
+</html>

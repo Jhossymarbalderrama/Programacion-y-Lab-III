@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <style>
+        form
+        {
+            margin: 0 auto;
+            width: 330px;
+            padding: 1em;
+            border: 1px solid rgb(112, 112, 112);
+            border-radius: 1em;
+        }
+    
+        h2.posicionTitulo 
+        {
+            margin-left: 330px;
+        }    
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 - Formulario Login</title>
+
+    <script src="./javascript/validaciones.js"></script>
+    <script src="./javascript/login.js"></script>   
+</head>
+<body>
+
+            <form action="./backend/verificarUsuario.php" method="POST">
+                <h2>Login</h2>  
+                <table align="center">
+                    <tr>
+                        <th style="text-align: left;padding-left: 15px" colspan="2">
+                            <h4>Ingreso de credenciales</h4>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align:left;padding-left:15px" colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left;padding-left:15px">DNI: </td>
+                        <td style="text-align:left;padding-left:15px">
+                            <input type="number" name="dni" id="dni"  placeholder="Ingrese DNI" min="1000000" max="55000000" required>
+                            <span id="spanDni" style="display: none;color: red;">*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left;padding-left:15px">Apellido: </td>
+                        <td style="text-align:left;padding-left:15px">
+                            <input type="text" name="apellido" id="apellido" placeholder="Ingrese Apellido" required>
+                            <span id="spanApellido" style="display: none;color: red;">*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left;padding-left:15px" colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="right">
+                            <input type="reset" value="Limpiar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="right" >
+                            <input type="submit" onclick="AdministrarValidacionesLogin()" value="Enviar">
+                        </td>
+                    </tr>  
+                </table>
+            </form>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Alta Empleado</title>
+    <script src="./javascript/validacionesLogin.js"></script>
+    <script src="./javascript/validaciones.js"></script>
+    <!-- <script src="./javascript/funciones.js"></script> -->
+</head>
+
+<body>
+    <h2 style="padding-left: 70px; padding-top: 40px;">Alta de Empleados</h2>
+    
+    <form name="miForm" action="./BackEnd/administracion.php" method="POST">
+        <table align="center" >
+            <tr>
+                <td style = "padding: 0px "><h4>Datos personales:</h4></td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr/></td>
+            </tr>
+            <tr>
+                <td><label for="dni">DNI:</label></td>
+                <td><input id="txtDni" name="txtDni" type="number" min="1000000" max="55000000" placeholder="Ingrese dni..." required>
+                    <span id="spanDni" style="display:none;">*</span>
+                </td>					
+            </tr>
+
+
+
+            <tr>
+                <td><label for="apellido">Apellido:</label></td>
+                <td><input id="txtApellido" name="txtApellido"type="apellido" placeholder="Ingrese apellido..." required>
+                    <span id="spanApellido" style="display:none;">*</span>
+                </td>					
+            </tr>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input id="txtNombre" name="txtNombre"type="text" placeholder="Ingrese nombre..." required>
+                    <span id="spanNombre" style="display:none;">*</span>
+                </td>					
+            </tr>
+            <tr>
+                <td><label for="sexo">Sexo:</label></td>
+                <td>
+                    <select name="cboSexo" id="cboSexo">
+                        <option value="---" disabled selected hidden>---</option>
+                        <option value="femenino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                      </select>	
+                      <span id="spanSexo" style="display:none;">*</span>
+                </td>			
+            	
+            </tr>
+
+            <tr>
+                <td style = "padding: 0px "><h4>Datos Laborales:</h4></td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr/></td>
+            </tr>
+            <tr>
+                <td><label for="legajo">Legajo:</label></td>
+                <td><input id="txtLegajo" name="txtLegajo" type="number" min="100" max="550"  placeholder="Ingrese legajo..." required>
+                    <span id="spanLegajo" style="display:none;">*</span>
+                </td>					
+            </tr>
+            <tr>
+                <td><label for="sueldo">Sueldo:</label></td>
+                <td><input id="txtSueldo" name="txtSueldo"type="number" min="8000" step="500"  max="250000" placeholder="Ingrese apellido..." required>
+                    <span id="spanSueldo" style="display:none;">*</span>
+                </td>					
+            </tr>
+            <tr>
+                <td rowspan="1">Turno:</td>
+            </tr>
+
+            <tr>
+                <td  style="text-align:right; padding-right:20px">
+                    <input type="radio" name="rdoTurno"  id="rdoTurno" value="maniana" checked="checked" />Ma&ntilde;ana:					
+                </td>
+            </tr>
+            <tr>
+                <td  style="text-align:right; padding-right:35px">
+                    <input type="radio" name="rdoTurno" id="rdoTurno" value="tarde" checked="checked" />Tarde:					
+                </td>
+            </tr>
+            <tr>
+                <td  style="text-align:right; padding-right: 29.5px;">
+                    <input type="radio" name="rdoTurno" id="rdoTurno" value="noche" checked="checked" />Noche:					
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr/></td>
+            </tr>
+            <tr>
+                <td align="right" style="padding-left: 80%">
+                    <input type="reset" value="Limpiar" name="reset" />
+                </td>
+
+            </tr>
+            <tr>
+                <td align="right" style="padding-left: 82%">
+                    <input type="submit" onclick="AdministrarValidaciones()" value="Enviar"  /> 
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+incluir archivos:
+	include "NombreArchivo";
+	require "NombreArchivo";
+	require_once "NombreArchivo"; //hace el include una sola vez 
+	
+	include "./NombreArchivo"; //busca el archivo en el mismo directorio
+	include "../NombreArchivo"; //busca el archivo en un directorio superior
+	include "../../NombreArchivo"; // "" 	""	""	mas superior
+
+
+
+Declaracion de Clases:
+
+class NombreClass
+{
+
+}
+
+Declaracion de Miembros de una clase (atributos y metodos):
+
+//Atributos
+[modificador] $nombreAtributo;
+
+//Metodo.
+[modificador] function NombreMetodo([$parametro])
+{
+
+}
+
+
+Objetos:
+
+$nombreObj = new NombreClase();
+
+//Metodo de instancia. (instancia: no estatic)
+$nombreObj->Func3();
+
+//Atributo de instancia.
+$nombreObj->attr3;
+
+los estaticos son con Clase::test() Ejemplo
+
+ucwords($cadena) ??? wtf q hace?
+
+
+HERENCIA:
+
+Class ClaseBase{
+	public function __construct(){
+	//Inicializa variables
+	}
+}
+
+Class ClaseDerivada extends ClaseBase{
+	public function __construct(){
+	parent::__construct();
+	//Inicializa variables propias de aqui
+	}
+}
+
+POLIMORFISMO:
+
+class ClaseBase{
+	public funtion Saludar(){
+	}
+}
+
+class ClaseDerivada extends ClaseBase{
+	public function Saludar(){
+	return parent::Saludar()." "."mundo";
+	}
+}
+
+INTERFACES:
+Las interfaces en PHP solo pueden contener declaraciones de metodos.
+
+interface IInterfaz{
+	function Metodo(){}
+}
+
+Y se implementa con Implements
+
+class Clase implements IInterfaz{
+	public function Metodo(){
+	
+	}
+}
+
+CLASES ABSTRACTAS:
+las clases abstractas pueden contener atributos y metodos, pero solo ellasa pueden contener metodos con el modificador abstract
+
+abstrac class ClaseAbstracta{
+	public abstract function metodo();
+}
+
+
+NAMESPACES
+
+
+
+

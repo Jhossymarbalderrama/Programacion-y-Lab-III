@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+
+    <script src="./ejercicio_17.js" ></script>
+</head>
+<body>
+
+    <!--
+        17- Confeccione un formulario que muestre una serie de títulos de películas con su
+        respectivo checkbox. Al pulsar el botón, mostrar las películas seleccionadas por consola.
+    -->
+    <form>
+        <table align="center" >
+            <tr>
+                <td colspan="2" align="center"><h2>Seleccion de Peliculas</h2></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><h3>Peliculas</h3></td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr>
+                <td>The Warriors, los amos de la noche</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="checkbox" name="pelicula" value="The Warriors, los amos de la noche" />						
+                </td>
+            </tr>
+            <tr>
+                <td>Escape From New York</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="checkbox" name="pelicula" value="Escape From New York" />						
+                </td>
+            </tr>
+            <tr>
+                <td>Big Trouble in Little China</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="checkbox" name="pelicula" value="Big Trouble in Little China" />						
+                </td>
+            </tr>
+            <tr>
+                <td>Lethal Weapon</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="checkbox" name="pelicula" value="Lethal Weapon" />						
+                </td>
+            </tr>
+            <tr>
+                <td>Die Hard</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="checkbox" name="pelicula" value="Die Hard" />						
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+
+            <tr>
+                <td style="padding-left: 180px;">
+                    <input type="button" onclick="MostrarDatos()" value="Enviar Peliculas" /> 
+                </td>
+            </tr>
+
+        </table>
+    </form>
+    
+</body>
+</html>

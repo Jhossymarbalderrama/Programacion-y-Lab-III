@@ -1,0 +1,130 @@
+CLASE 2 LABORATORIO (HTML5):
+
+    Clase02_01.html-
+        Elementos Basicos HTML
+            <!doctype>          |Define el tipo de documento
+            <html>              |Define el inicio de un documento HTML
+            <title>             |Define un titulo para el documento
+            <body>              |Define el cuerpo del documento
+            <h1>al<h6>          |Define encabezados HTML
+            <p>                 |Define un parrafo
+            <br>                |Inserta un salto de linea
+            <hr>                |Define un cambio tematico en el contenido (linea horizontal)
+            <!- ->              |Definir un comentario
+
+    Clase02_02.html-
+        Imagenes *(Nuevas versions de HTML):
+            <img>                   |Define una Imagen
+            <map>                   |Define una imagen de mapa
+            <area>                  |Define un area dentro de una imagen de mapa
+            <canvas>*               |Usando para dibujar graficos via scripting
+            <figcaption>*           |Define un titulo para un elemento <figure>
+            <figure>*               |Define contenidos para Imagenes
+            <picture>*              |Define un contenedor de multiples imagenes.
+    
+    Clase02_03.html-
+        Links *(Nuevas versions de HTML):
+            <a>                     |Define un hipervinculo o enlace
+            <link>                  |Define la relacion entre un documento y un recurso externo
+            <nav>*                  |Define un enlace de navegacion
+
+    Clase02_04.html-
+        Audio / Video *(Nuevas versions de HTML):
+            <audio>*                |Define un contenido de audio
+            <video>*                |Define un video o pelicula
+            <source>*               |Define recursos para elementos <video>,<audio> y <picture>
+            <track>*                |Define pistas de texto para elementos <video> y <audio>
+
+    Clase02_05.html-
+        Listas *(Nuevas versions de HTML):
+            <ul>                    |Define una lista desordenada
+            <ol>                    |Define una lista ordenada
+            <li>                    |Define un item de una lista
+            <dl>                    |Define una lista de descripcion
+            <dd>                    |Define una descripcion de un termino en una lista <dl>
+            <menu>                  |Define un item de un comando de lista/menu
+            <menuitem>*             |Define un item de comando/menu que el usuario puede invocar desde un menu 'popup'
+
+    Clase02_06.html-
+        Tablas: 
+            <table>                 |Define una Tablas
+            <caption>               |Define el titulo de la Tablas
+            <th>                    |Define una celda cabecera en la fila de la Tablas
+            <tr>                    |Define una fila en la Tablas
+            <td>                    |Define una celda en la fila de la Tablas
+            <thead>                 |Agrupa las celdas <th> de la Tablas
+            <tbody>                 |Agrupa el contenido del cuerpo en la Tablas
+            <tfoot>                 |Agrupa el contenido del pie de la Tablas
+
+    Clase02_07.html-
+        Estilos y Sèmanticas:
+            <styles>                |Define estilos para un documento
+            <div>                   |Define una seccion (contenedora) en un documento
+            <span>                  |Define una seccion (in-line) en un documento
+            <header>*               |Define el encabezado para un documento o seccion
+            <footer>*               |Define el pie para un documento o seccion
+            <main>*                 |Especifica el contenido principal de un documento
+            <section>*              |Define una seccion en un documento
+            <article>*              |Define un article
+            <aside>*                |Define contenido 'de lado' de una pagina contenedora
+            <details>*              |Define detalles que el usuario puede ver u ocultar
+            <dialog>*               |Define una ventana o caja de dialogo
+            <summary>*              |Define un encabezado visible para un elemento <details>
+            <data>*                 |Vincula el contenido
+
+        Meta Datos:
+            <head>                  |Define informacion acerca del documento
+            <meta>                  |Define metaddatos para documentos HTML
+
+        Programacion:
+            <script>                |Define codigo del lado del cliente
+            <embed>*                |Define un contenedor para una aplicacion externa no HTML
+            <object>                |Define un objeto embebido
+            <param>                 |Define un parametro para un objeto
+
+
+        Nuevos Types & Attributes
+
+            Input Types     /           Input Atributes
+            color           |           autocomplete
+            date            |           autofocus
+            datetime        |           form
+            email           |           height / width
+            month           |           list
+            number          |           min / max
+            range           |           multiple
+            search          |           pattem (expresiones regulares)
+            tel             |           placeholder
+            time            |           required
+            url             |           step
+            week
+
+
+    Formularios:
+
+    <form method="[GET|POST]" action="URL" name="frm" id="frm">
+        //Contenido del Formulario
+    </form>
+
+    <INPUT>
+    -El tang <input>es el segunto tag mas utilizado en Formularios
+
+    -Es un tag multifuncion, ya que de acuerdo al valor del atributo type, se podran definir: 
+    textbox, password, checkbox, radiobutton, etc.
+
+    <input type>="[TEXT|PASSWORD|CHECKBOX|RADIO|SUBMIT|RESET|FILE|HIDDEN|IMAGE|BUTTON]"
+    name="nombre"id="nombre"value="valor"/>
+
+    Caja de texto
+    -Es un control de entrada de tipo texto
+
+    <input type="text" name="txtDNI" size="35" value="0">
+
+
+    Chapter Summary
+    Use the "style" attribute for styling HTML elements
+    Use "background-color" for background color
+    Use "color" for text colors
+    Use "font-family" for text fonts
+    Use "font-size" for text sizes
+    Use "text-align" for text alignment

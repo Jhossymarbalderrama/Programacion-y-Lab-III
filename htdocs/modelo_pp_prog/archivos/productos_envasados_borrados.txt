@@ -1,0 +1,5 @@
+10 - doritos2 - argentina - 225458575 - 140 - ./productosBorrados/10doritos2borrado41156.jpg
+14 - doritos5 - argentina - 654521221 - 80 - ./productosBorrados/14doritos5borrado43636.jpg
+13 - doritos4 - argentina - 548544552 - 80 - ./productosBorrados/13doritos4borrado44004.jpg
+15 - doritos6 - argentina - 65522345 - 80 - ./productosBorrados/15doritos6borrado44235.jpg
+12 - doritos3 - argentina - 235545875 - 80 - ./productosBorrados/12doritos3borrado44656.jpg

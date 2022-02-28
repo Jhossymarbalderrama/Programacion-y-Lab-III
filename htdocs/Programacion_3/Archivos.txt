@@ -1,0 +1,63 @@
+    ARCHIVOS
+
+        fopen():
+            int fopen(archivo, modo); // referencia al puntero fopen(path, otro string con el tipo (r,w,a,x...));
+
+            r abre un archivo para solo lectura. el cursor comienza al principio del archivo
+            w abre un archivo para solo escritura. si no existe, crea uno nuevo. Si existe, borra el contenido.
+            a para escribir desde el final del texto del archivo
+            x crear un nuevo archivo para solo lectura. retorna false y un error si el archivo existe.
+            r+ abre un archivo para lectura/escritura. idem r
+            w+ abre un archivo para lectura/escritura. idem w
+            a+ abre un archivo para lectura/escritura. idem a
+            x+ abre un archivo para lectura/escritura. idem x
+
+        fclose()
+            $ar = fopen(archivo, modo);
+            //MAS CODIGO
+            fclose($ar); //retorna True si tuvo exito, False caso contrario
+
+        fread()
+            echo fread (indicador_archivo, filesize(archivo)); //retorna un string que representa el contenido del archivo leido
+
+        fgets() 
+            //Nos permite leer una linea de un archivo abierto
+            //requiere como parametro el indicador del archivo a ser leido, y retorna un string que representa la linea que fue leida
+            //despues de cada llamada a fgets, el cursor se mueve a la linea siguiente.
+
+                string fgets (indicador_archivos);
+
+        feof() (End Of File)
+            Retorna un booleano que indica si se ha llegado al fin del archivo
+            Requiere como parametro el indicador
+
+            $ar = fopen();
+            //lee linia a linia hasta EOF
+            while(!feof($ar))
+            {
+                echo fgets($ar), "<br/>";
+            }
+            fclose($ar);
+
+        fwrite() - fputs()
+            -Nos permite escribir en un archivo abierto
+            -La funcion parara cuando llegue al final del archivo o cuando alcance la longitud especificada 
+            -El primer parametro contiene el archivo a ser leido, y el segundo es el string a ser escrito. 
+            -El tercer parametro es opcional e indidca la cantidad de byte a ser escritos
+            -Retorna la cantidad de bytes que se escribieron o False si hubo erro.
+
+            fwrite(indicador_archivo, texto[,longitud]);
+            fputs(indicador_archivo, texto[,longitud]);
+
+        copy()
+            -Permite copiar una archivo
+            -Los parametros que recibe son los nombres de los archivos.
+            -Retorna True en caso de exto o False si hubo algun error. 
+
+            copy(archivo_origen, archivo_destino);
+
+        unlink()
+            -permite eliminar un archivo
+            -retorna true en caso de exito o false si hubo algun error.
+            
+            unlink(archivo);

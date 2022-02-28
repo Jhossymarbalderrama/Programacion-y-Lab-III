@@ -1,0 +1,7 @@
+42321951 - Giuliana - Perez - F - 178 - 15500 - N - ../fotos/42321951-Perez.png
+1000001 - Pepe - LoHizo - M - 111 - 12000 - M - ../fotos/1000001-LoHizo.jpg
+1000005 - esteban - gonzales - F - 116 - 10500 - N - ../fotos/1000005-gonzales.jpg
+1000007 - Pepey - LoHizoyyy - M - 107 - 11500 - M - ../fotos/1000007-LoHizoyyy.jpg
+1000008 - Jhossymar - Rocha - M - 108 - 10000 - N - ../fotos/1000008-Rocha.png
+1000006 - melany - curra - F - 106 - 10500 - M - ../fotos/1000006-curra.png
+1000017 - jose - balderrama - M - 117 - 10500 - M - ../fotos/1000017-balderrama.jpg

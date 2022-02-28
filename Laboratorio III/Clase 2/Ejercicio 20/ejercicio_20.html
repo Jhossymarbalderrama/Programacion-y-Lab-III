@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+
+    <script src="./ejercicio_20.js" ></script>
+</head>
+<body>
+    <!--
+        20- Confeccionar un formulario que muestre un control de cada tipo y los muestre todos
+            deshabilitados. (Cuando conozca JavaScript podemos habilitarlos por ejemplo si el visitante
+            ingresa una clave correcta, por ahora vea como queda visualmente el formulario con los
+            controles deshabilitados)
+    -->
+
+    <form method="POST">
+        <table align="center" border="1" >
+            <tr>
+                <td><h3>Habilitar Formulario:</h3>
+                    Ingrese Contraseña:
+                    <input title="algo" type="text" id="textPassword" name="textPassword" placeholder="Ingrese password" required > 
+                </td>                
+            </tr>
+            <tr>
+                <td style="padding-left: 180px;">
+                    <input type="button" onclick="HabilitarFormulario()" value="Enviar password"/>     
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <form method="POST">
+        <table align="center">        
+            <tr>
+                <td colspan="2"><h3>Formulario Control de Types</h3></td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr>
+                <td><h3>TEXT</h3>
+                    Ingrese un Texto:
+                    <input title="Texto vacio" type="text" id="algo" name="algo" placeholder="Ingrese algo" required disabled  > 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr>                
+                <td><h3>COLOR</h3>
+                    Selecciona tu color favorito:
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000" disabled>                    
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr>
+                <td><h3>DATE</h3>
+                    Fecha de nacimiento:
+                    <input type="date" id="bday" name="bday" min="1999-01-01" max="2020-12-31" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr>
+                <td><h3>MONTH</h3>
+                    Inicio de clases (mes y año):
+                    <input type="month" id="mesanio" name="mesanio" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>EMAIL</h3>
+                    E-mail:
+                    <input type="email" id="email" name="email" disabled>   
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr>
+                <td><h3>NUMBER</h3>
+                    Número de lenguajes aprendidos:
+                    <input type="number" id="lenguajes" name="lenguajes" min="0" max="12" step="2" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>RANGE</h3>
+                    Calificación pretendida:
+                    0<input type="range" id="calificacion" name="calificacion" min="0" max="10" value="4" disabled>10
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr>
+                <td><h3>TIME</h3>
+                    Seleccione horario:
+                    <input type="time" id="horario" name="horario"  disabled>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr>
+                <td><h3>URL</h3>
+                    Indique url:
+                    <input type="url" id="web" name="web" disabled >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr>
+                <td><h3>WEEK</h3>
+                    Seleccione la mejor semana de su vida:
+                    <input type="week" id="bestday" name="bestday"  disabled>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr>
+                <td><h3>DATELIST</h3>
+                    <input list="browsers" id="listaBrowser" placeholder="Elija su navegador preferido" disabled>
+                    <datalist id="browsers" >
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr></tr>
+                <td colspan="2"><h3>CheckBox - Peliculas</h3></td>
+            </tr>
+            <tr>
+                <td>The Warriors, los amos de la noche</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="checkbox"  id="p1" name="pelicula" value="The Warriors, los amos de la noche" disabled/>						
+                </td>
+            </tr>
+            <tr>
+                <td>Escape From New York</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="checkbox" id="p2" name="pelicula" value="Escape From New York" disabled/>						
+                </td>
+            </tr>
+            <tr>
+                <td>Big Trouble in Little China</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="checkbox" id="p3" name="pelicula" value="Big Trouble in Little China" disabled/>						
+                </td>
+            </tr>
+            <tr>
+                <td>Lethal Weapon</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="checkbox" id="p4" name="pelicula" value="Lethal Weapon" disabled/>						
+                </td>
+            </tr>
+            <tr>
+                <td>Die Hard</td>					
+                <td  style="text-align:left;padding-left:15px">
+                    <input type="checkbox" id="p5" name="pelicula" value="Die Hard" disabled/>						
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+
+            <tr>                
+                <td colspan="2" style="padding-top:10px;"><h3>Radio Buton - Votar Sitio:</h3></td>
+            </tr>
+            <tr>
+                			
+                <td style="padding-left:30px;">
+                    <input type="radio" id="v1" name="rdoVoto" value="Excelente" disabled/>Excelente				
+                </td>                
+                	
+            </tr>
+            <tr>			
+                <td style="padding-left:30px;">
+                    <input type="radio" id="v2" name="rdoVoto" value="Muy Bueno" checked="checked" disabled/>Muy Bueno						
+                </td>
+            </tr>
+            <tr>			
+                <td style="padding-left:30px;">
+                    <input type="radio"  id="v3" name="rdoVoto" value="Regular" disabled/>Regular					
+                </td>
+            </tr>		
+            <tr>			
+                <td style="padding-left:30px;">
+                    <input type="radio" id="v4" name="rdoVoto" value="Malo" disabled/>Malo					
+                </td>
+            </tr>		
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+
+            <tr><td><h3>ComboBOX - Seleccione:</h3></td></tr>
+            <tr>
+                <td style="text-align:left;padding-left:15px">
+                    <select id="cboMail" name="cboMail" multiple="multiple" disabled>
+                        <optgroup label="Argentina">
+                            <option value="murty@outlook.com.ar" >murty@outlook.com.ar</option>
+                            <option value="dalamb@icloud.com.ar" >dalamb@icloud.com.ar</option>
+                            <option value="jfreedma@hotmail.com" >jfreedma@hotmail.com</option>
+                        </optgroup>
+                        <optgroup label="Chile">
+                            <option value="juerd@hotmail.com.cl">juerd@hotmail.com.cl</option>
+                            <option value="fglock@hotmail.com.cl" >fglock@hotmail.com.cl</option>
+                        </optgroup>
+                        <optgroup label="Otros">
+                            <option value="vganesh@optonline.net" >vganesh@optonline.net</option>
+                            <option value="ducasse@att.net" >ducasse@att.net</option>
+                            <option value="dgriffith@optonline.net" >dgriffith@optonline.net</option>
+                        </optgroup>
+                    </select>					
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr /></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" id="btnLimpiar" value="Limpiar" disabled/>               
+                </td>
+                <td>
+                    <input type="submit" id="btnEnviar" value="Enviar" disabled/>     
+                </td>
+            </tr>
+        </table>
+    </form>     
+</body>
+</html>

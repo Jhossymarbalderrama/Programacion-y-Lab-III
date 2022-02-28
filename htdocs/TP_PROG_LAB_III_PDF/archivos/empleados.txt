@@ -1,0 +1,3 @@
+Jhossymar - Balderrama - 1000000 - M - 100 - 12000 - Mañana - ../fotos/1000000-Balderrama.png
+Pepe - LoHizo - 1000001 - M - 101 - 12500 - Mañana - ../fotos/1000001-LoHizo.jpg
+testn - test - 1000002 - F - 102 - 14000 - Noche - ../fotos/1000002-test.jpg
